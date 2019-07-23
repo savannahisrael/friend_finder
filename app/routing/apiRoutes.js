@@ -16,7 +16,7 @@ module.exports = function(app) {
         var chosen = req.params.routeName;
 
         for (var i = 0; i < candidates.length; i++) {
-            if (chosen == candidates[i].name) {
+            if (chosen == candidates[i].routeName) {
                 return res.json(candidates[i]);
             }
         }
